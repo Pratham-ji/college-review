@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Review Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>College Review</h1>
+        <form id="college-review-form" action="https://form.taxi/s/7951bdcq" method="POST">
+            <label for="your-name">Your Name:</label>
+            <input type="text" id="your-name" name="your_name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="college-name">College Name:</label>
+            <input type="text" id="college-name" name="college_name" list="college-list" required>
+            <datalist id="college-list">
+                <option value="Indian Institute of Science, Bangalore">
+                <option value="Jawaharlal Nehru University, New Delhi">
+                <option value="Banaras Hindu University, Varanasi">
+                <option value="University of Hyderabad, Hyderabad">
+                <option value="Calcutta University, Kolkata">
+                <option value="Jadavpur University, Kolkata">
+                <option value="Anna University, Chennai">
+                <option value="Amrita Vishwa Vidyapeetham, Coimbatore">
+                <option value="Manipal Academy of Higher Education, Manipal">
+                <option value="Savitribai Phule Pune University, Pune">
+                <option value="Graphic Era University, Dehradun">
+                <option value="Graphic Era Hill University, Dehradun">
+                <option value="University of Petroleum and Energy Studies (UPES), Dehradun">
+                <option value="DIT University, Dehradun">
+                <!-- Options for colleges -->
+            </datalist>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="city-list" required>
+            <datalist id="city-list">
+                <option value="Bangalore">
+                <option value="New Delhi">
+                <option value="Varanasi">
+                <option value="Hyderabad">
+                <option value="Kolkata">
+                <option value="Chennai">
+                <option value="Coimbatore">
+                <option value="Manipal">
+                <option value="Pune">
+                <option value="Dehradun">
+                <!-- Options for cities -->
+            </datalist>
+
+            <label for="state">State:</label>
+            <select name="state" id="state" required>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                <!-- Options for states -->
+            </select>
+
+            <label for="course-name">Course Name:</label>
+            <input type="text" id="course-name" name="course_name" list="course-list" required>
+            <datalist id="course-list">
+                <option value="B.Tech">
+                <option value="M.Tech">
+                <option value="MBA">
+                <option value="BBA">
+                <option value="BCA">
+                <option value="B.Sc">
+                <option value="M.Sc">
+                <option value="B.Com">
+                <option value="M.Com">
+                <option value="BA">
+                <option value="MA">
+                <!-- Options for courses -->
+            </datalist>
+
+            <label for="rating">Your Rating:</label>
+            <div class="stars" id="rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <input type="hidden" id="rating-value" name="rating" value="">
+
+            <label for="review">Detailed Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <button type="submit" class="cssbuttons-io-button">
+                SUBMIT
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+        </form>
+    </div>
+    <div id="thank-you-message" class="hidden">
+        <h1>Thank You!</h1>
+        <p>Your submission has been received.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
